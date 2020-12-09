@@ -45,6 +45,7 @@ function App() {
 
   const emojiHandler = (inputText) =>{
     setText(emodict[inputText]);
+    setEmoji(inputText)
   }
   
   return (
@@ -70,7 +71,7 @@ function App() {
           
 
           <div className="output">
-            <h2>{text}</h2>
+            <h2>{emoji} : {text}</h2>
           </div>
           
         </div>
